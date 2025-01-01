@@ -4,6 +4,7 @@ class prime{
 public static void main(String args[]){
 Scanner s=new Scanner(System.in);
 int num=s.nextInt();
+while(num
 int count=0;
 int i;
 for(i=1;i<=num;i++)

@@ -9,7 +9,7 @@ int a=s.nextInt();
 System.out.println("Enter the second number");	             
 int b=s.nextInt();
 System.out.println("Enter the operator");
-char ch=s.next();
+char ch=s.next().charAt(0);
 int c=0;
 boolean validoperation=true;
 switch(ch){

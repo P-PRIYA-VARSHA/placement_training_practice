@@ -6,7 +6,7 @@ class PrimeRange {
             return false; // Numbers less than 2 are not prime
         for (int i = 2; i <= Math.sqrt(num); i++) {
             if (num % i == 0) 
-                return false; // Found a divisor, so not a prime
+       	       return false; // Found a divisor, so not a prime
         }
         return true; // No divisors found, so it's a prime
     }

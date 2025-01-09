@@ -14,4 +14,4 @@ System.out.println(a);
 
 }
 
-//local variable should be declared inside function  only;
+//local variable should be declared inside function only;

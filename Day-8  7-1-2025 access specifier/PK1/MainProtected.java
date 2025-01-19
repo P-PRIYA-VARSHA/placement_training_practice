@@ -1,7 +1,5 @@
-package PK1;
-import java.io.*;
 
-//import PK1.ProtectedAccess;
+import java.io.*;
 
 class MainProtected{
 

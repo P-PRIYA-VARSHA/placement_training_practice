@@ -2,7 +2,7 @@ import java.util.*;
 import java.io.*;
 public class ModifyMatrixByOperators{
 
-static int [] [] modifyMatrix (int arr [] [], char operator, int key,int n) {
+static int [] [] modifyMatrix(int arr [] [], char operator, int key,int n) {
 			int c[][]=new int[n][n];
  for(int i=0;i<n;i++)
         {
@@ -28,16 +28,19 @@ static int [] [] modifyMatrix (int arr [] [], char operator, int key,int n) {
                        break;
                     }
                      case '/':
-                    {
+                    { if(key==0)
+			System.out.println("number cannot be divided by zero");
+else{
                        c[i][j]=arr[i][j]/key;
-                       break;
+                       break;}
                     }
                      case '%':
-                    {
-
+                    {	if(key==0)
+			System.out.println("number cannot be divided by zero");
+else{
                    
                        c[i][j]=arr[i][j]%key;
-                       break;
+                       break;}
                     }
 
                }
@@ -72,8 +75,9 @@ int res[][]=modifyMatrix (a,ch,key,n);
 System.out.println("The modified operation is:");
 
 for(int i=0;i<n;i++){
-for(int j=0;j<n;j++)
-System.out.print(res[i][j]+" ");
+for(int j=0;j<n;j++){
+System.out.print(a[i][j]+" "+ch+" "+key+" = ");
+System.out.print(res[i][j]+" ");}
 System.out.println();
 }
 

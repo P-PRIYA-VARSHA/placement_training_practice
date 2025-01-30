@@ -31,6 +31,7 @@ public class MissingNumbers {
         }
         TreeSet<Integer> x3=new TreeSet<>(x2);
         x3.removeAll(x1);
+
          if (x3.isEmpty()) {
             System.out.println("No number is missing");
         } else {
